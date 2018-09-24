@@ -6,7 +6,7 @@ Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
 
-URxvt.font: xft:Inconsolata:size=12, xft:Inconsolata for Powerline:size=12
+URxvt.font: xft:Inconsolata:size=12, xft:Inconsolata for Powerline:size=12, xft:Source Code Pro:size=12
 URxvt.depth: 32
 URxvt.background: rgba:0000/0000/0200/8000
 
