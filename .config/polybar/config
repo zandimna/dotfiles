@@ -53,7 +53,6 @@ module-margin-right = 2
 
 font-0 = Inconsolata:size=18;1
 font-1 = unifont:fontformat=truetype:size=14:antialias=false;0
-font-2 = "Font Awesome 5 Brands:style=Regular:size=10;2"
 
 modules-left = bspwm i3
 modules-center = taskwarrior 
@@ -224,7 +223,7 @@ type = internal/network
 interface = wlp4s0
 interval = 3.0
 
-format-connected =  <label-connected>
+format-connected = <label-connected>
 format-connected-underline = #9f78e1
 label-connected = %essid%
 
@@ -411,8 +410,9 @@ menu-2-1-exec = menu-open-0
 
 [module/batinfo]
 type = custom/script
-exec = ~/programming/batinfo.sh
-label = %output:2%%
+interval = 10
+exec = ~/programming/battery-combined-tlp.sh
+label = %output:1%%
 format-underline = #ffb52a
 
 [module/mjd]
