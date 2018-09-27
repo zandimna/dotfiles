@@ -44,7 +44,7 @@ ZSH_THEME="agnosterzak"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -123,3 +123,6 @@ alias def="sdcv --use-dict='Concise Oxford English Dictionary (En-En)'"
 alias i3conf="vim ~/.config/i3/config"
 alias barconf="vim ~/.config/polybar/config"
 alias pacman="pacaur --color always"
+
+export EDITOR=vim
+export PATH=$PATH:/home/zandimna/.gem/ruby/2.5.0/bin
