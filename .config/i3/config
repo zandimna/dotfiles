@@ -35,6 +35,18 @@ bindsym $mod+Home exec i3lock && systemctl suspend
 # screenshot
 bindsym $mod+y exec python ~/programming/tired.py
 bindsym --release Print exec maim -s > ~/Pictures/screenshots/$(date +%Y%m%d-%H%M%S)"-screenshot.png"
+
+#screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+
+# volume control
+bindsym XF86AudioRaiseVolume exec pamixer -i 5
+bindsym XF86AudioLowerVolume exec pamixer -d 5
+bindsym XF86AudioMute exec pamixer -t
+
+
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
