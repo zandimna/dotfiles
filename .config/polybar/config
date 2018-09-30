@@ -53,6 +53,7 @@ module-margin-right = 2
 
 font-0 = Inconsolata:size=18;1
 font-1 = unifont:fontformat=truetype:size=14:antialias=false;0
+font-2 = Font Awesome 5 Free:size=14;1
 
 modules-left = bspwm i3
 modules-center = taskwarrior 
@@ -205,7 +206,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix =
+format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -263,10 +264,9 @@ interval = 1
 date =
 date-alt = "%Y-%m-%d "
 
-time = %H:%M
+time =  %H:%M
 time-alt = %H:%M:%S
-
-format-prefix =
+format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
@@ -431,7 +431,7 @@ screenchange-reload = true
 interval = 30
 type = custom/script
 exec = ~/programming/task_polybar.sh
-format = <label>
+format = " <label>"
 format-foreground = #FFF
 format-prefix =
 click-left = task "$((`cat /tmp/tw_polybar_id`))" done
