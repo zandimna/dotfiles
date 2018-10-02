@@ -28,7 +28,7 @@ for_window [class="^.*"] border pixel 0
 exec_always --no-startup-id ~/programming/polybar.sh
 exec_always --no-startup-id fcitx &
 exec compton
-gaps inner 15
+gaps inner 25
 bindsym $mod+F1 gaps inner current plus 5
 bindsym $mod+F2 gaps inner current minus 5
 bindsym $mod+Home exec i3lock && systemctl suspend
