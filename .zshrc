@@ -116,7 +116,6 @@ zstyle :compinstall filename '/home/zandimna/.zshrc'
 autoload -Uz compinit && compinit
 ~/.vocab
 alias p="proxychains -q"
-alias tired="python ~/programming/tired.py"
 alias ls="ls --color"
 alias def="sdcv --use-dict='Concise Oxford English Dictionary (En-En)'"
 alias i3conf="vim ~/.config/i3/config"
@@ -127,4 +126,4 @@ alias cp="cp -iv"
 
 
 export EDITOR=vim
-export PATH=$PATH:/home/zandimna/.gem/ruby/2.5.0/bin
+export PATH=$PATH:/home/zandimna/.gem/ruby/2.5.0/bin:/home/zandimna/.bin
