@@ -67,5 +67,6 @@ syntax on
 set tabstop=4
 set shiftwidth=4
 set expandtab
-:nnoremap k gk
-:nnoremap j gj
+set number
+nnoremap k gk
+nnoremap j gj

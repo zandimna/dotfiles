@@ -127,3 +127,5 @@ alias cp="cp -iv"
 
 export EDITOR=vim
 export PATH=$PATH:/home/zandimna/.gem/ruby/2.5.0/bin:/home/zandimna/.bin
+export QT_QPA_PLATFORMTHEME=gtk2
+export GTK2_RC_FILES=/home/zandimna/.gtkrc-2.0
