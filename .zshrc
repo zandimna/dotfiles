@@ -126,8 +126,6 @@ alias cp="cp -iv"
 
 
 export EDITOR=vim
-export PATH=$PATH:/home/zandimna/.gem/ruby/2.5.0/bin:/home/zandimna/.bin
-export QT_QPA_PLATFORMTHEME=gtk2
 export GTK2_RC_FILES=/home/zandimna/.gtkrc-2.0
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/zandimna/.gem/ruby/2.5.0/bin:/home/zandimna/.bin:/home/zandimna/.gem/ruby/2.5.0/bin:/home/zandimna/.bin:/home/zandimna/.scc/scc.py"
+export PATH="$PATH:/home/zandimna/.gem/ruby/2.5.0/bin:/home/zandimna/.bin"
 alias scc='/home/zandimna/.scc/scc.py'
