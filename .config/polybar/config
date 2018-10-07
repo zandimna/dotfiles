@@ -424,7 +424,7 @@ menu-2-1-exec = menu-open-0
 
 [module/batinfo]
 type = custom/script
-interval = 10
+interval = 60
 exec = ~/programming/battery-combined-tlp.sh
 label = %output:1%%
 format-underline = #ffb52a
