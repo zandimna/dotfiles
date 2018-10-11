@@ -442,7 +442,7 @@ screenchange-reload = true
 ;compositing-border = over
 
 [module/taskwarrior]
-interval = 30
+interval = 1 
 type = custom/script
 exec = ~/programming/task_polybar.sh
 format = " <label>"
