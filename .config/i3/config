@@ -30,13 +30,13 @@ assign [class="urxvt"] $ws2
 exec_always --no-startup-id ~/programming/polybar.sh
 exec_always --no-startup-id fcitx &
 exec compton
-gaps inner 25
+gaps inner 30
 bindsym $mod+F1 gaps inner current plus 5
 bindsym $mod+F2 gaps inner current minus 5
 bindsym $mod+Home exec i3lock && systemctl suspend
 # screenshot
 bindsym $mod+y exec python ~/programming/tired.py
-bindsym --release Print exec maim -s > ~/Pictures/screenshots/$(date +%Y%m%d-%H%M%S)"-screenshot.png"
+bindsym --release Print exec maim -s ~/Pictures/screenshots/$(date +%Y%m%d-%H%M%S)"-screenshot.png"
 
 #screen brightness
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5
@@ -54,7 +54,7 @@ floating_modifier $mod
 
 # start applications
 bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+t exec firefox
+bindsym $mod+t exec chromium
 bindsym $mod+n exec nautilus
 
 
