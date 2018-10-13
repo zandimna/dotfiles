@@ -96,6 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+bindkey -v
 zstyle ':completion:*' auto-description '%d:'
 zstyle ':completion:*' completer _list _expand _complete _ignored _match _correct _approximate _prefix
 zstyle ':completion:*' completions 1
