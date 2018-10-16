@@ -68,5 +68,10 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set number
+set laststatus=2
 nnoremap k gk
 nnoremap j gj
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+

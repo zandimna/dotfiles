@@ -8,7 +8,7 @@ Xft.rgba: rgb
 
 URxvt.font: xft:Inconsolata:size=12, xft:Inconsolata for Powerline:size=12, xft:Source Code Pro:size=12, xft:Droid Sans Fallback:size=12 
 URxvt.depth: 32
-URxvt.background: rgba:0000/0000/0000/8000
+URxvt.background: rgba:0000/0000/0000/a000
 
  
 ! special
