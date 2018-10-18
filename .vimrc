@@ -67,10 +67,15 @@ syntax on
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set number
+let g:ycm_server_python_interpreter="/usr/bin/python2"
+set noshowmode
 set laststatus=2
+set background=light
+colorscheme solarized
 nnoremap k gk
 nnoremap j gj
+inoremap jw <Esc>
+inoremap wj <Esc>
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup

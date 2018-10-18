@@ -194,7 +194,7 @@ label-song-ellipsis = true
 type = internal/xbacklight
 
 format = <label> <bar>
-label = BL %percentage%%
+label =  %percentage%%
 
 bar-width = 7
 bar-indicator =
@@ -272,7 +272,7 @@ format-disconnected =
 type = internal/date
 interval = 1
 
-date =
+date = " %d "
 date-alt = " %Y-%m-%d "
 time =  %H:%M
 time-alt =  %H:%M:%S
