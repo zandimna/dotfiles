@@ -70,7 +70,8 @@ set expandtab
 let g:ycm_server_python_interpreter="/usr/bin/python2"
 set noshowmode
 set laststatus=2
-set background=light
+set background=dark
+set t_Co=256
 colorscheme solarized
 nnoremap k gk
 nnoremap j gj

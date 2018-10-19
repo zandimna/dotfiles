@@ -124,8 +124,7 @@ alias barconf="vim ~/.config/polybar/config"
 alias pacman="pacaur --color always"
 alias mv="mv -iv"
 alias cp="cp -iv"
-alias stayawake="python ~/programming/stayawake/stayawake.py"
-alias stayawake-gtk="python ~/programming/stayawake/stayawake-gtk.py"
+alias stayawake="python ~/programming/stayawake-stable/stayawake/stayawake.py"
 
 export EDITOR=vim
 export GTK2_RC_FILES=/home/zandimna/.gtkrc-2.0
