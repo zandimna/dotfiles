@@ -35,7 +35,6 @@ bindsym $mod+F1 gaps inner current plus 5
 bindsym $mod+F2 gaps inner current minus 5
 bindsym $mod+Home exec i3lock && systemctl suspend
 # screenshot
-bindsym $mod+y exec python ~/programming/tired.py
 bindsym --release Print exec maim -s ~/Pictures/screenshots/$(date +%Y%m%d-%H%M%S)"-screenshot.png"
 
 #screen brightness
@@ -56,6 +55,7 @@ floating_modifier $mod
 bindsym --release $mod+Return exec i3-sensible-terminal
 bindsym $mod+t exec chromium
 bindsym $mod+n exec nautilus
+bindsym $mod+y exec ~/programming/stayawake/stayawake-gtk.py >> ~/stayawake.log
 
 
 # kill focused window
