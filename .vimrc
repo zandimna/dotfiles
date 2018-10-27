@@ -60,7 +60,9 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
+filetype off
 execute pathogen#infect()
+execute pathogen#helptags()
 set nocompatible
 filetype plugin on
 syntax on 
