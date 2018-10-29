@@ -115,7 +115,7 @@ zstyle ':completion:*' rehash true
 zstyle :compinstall filename '/home/zandimna/.zshrc'
 
 autoload -Uz compinit && compinit
-~/.vocab
+#~/.vocab
 alias p="proxychains -q"
 alias ls="ls --color"
 alias def="sdcv --use-dict='Concise Oxford English Dictionary (En-En)'"
@@ -124,7 +124,7 @@ alias barconf="vim ~/.config/polybar/config"
 alias pacman="pacaur --color always"
 alias mv="mv -iv"
 alias cp="cp -iv"
-alias stayawake="python ~/programming/stayawake-stable/stayawake/stayawake.py"
+alias stayawake="python ~/programming/stayawake-stable/stayawake-gtk.py"
 
 export EDITOR=vim
 export GTK2_RC_FILES=/home/zandimna/.gtkrc-2.0

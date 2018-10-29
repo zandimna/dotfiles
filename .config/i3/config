@@ -33,7 +33,7 @@ exec compton
 gaps inner 30
 bindsym $mod+F1 gaps inner current plus 5
 bindsym $mod+F2 gaps inner current minus 5
-bindsym $mod+Home exec i3lock && systemctl suspend
+bindsym $mod+Home exec i3lock-next "Type password to unlock." Roboto ; exec systemctl suspend
 # screenshot
 bindsym --release Print exec maim -s ~/Pictures/screenshots/$(date +%Y%m%d-%H%M%S)"-screenshot.png"
 
@@ -55,7 +55,7 @@ floating_modifier $mod
 bindsym --release $mod+Return exec i3-sensible-terminal
 bindsym $mod+t exec chromium
 bindsym $mod+n exec nautilus
-bindsym $mod+y exec ~/programming/stayawake/stayawake-gtk.py >> ~/stayawake.log
+bindsym $mod+y exec ~/programming/stayawake-stable/stayawake-gtk.py >> ~/stayawake.log
 
 
 # kill focused window
