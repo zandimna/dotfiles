@@ -69,12 +69,14 @@ syntax on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set termguicolors
 let g:ycm_server_python_interpreter="/usr/bin/python2"
+let g:solarized_termtrans=1
 set noshowmode
 set laststatus=2
 set background=dark
 set t_Co=256
-colorscheme solarized
+colorscheme solarized8
 nnoremap k gk
 nnoremap j gj
 inoremap jw <Esc>
