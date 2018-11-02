@@ -2,4 +2,4 @@ rofi.combi-modi:    window,run,ssh
 rofi.theme:         solarized
 rofi.font:          Inconsolata 18 
 rofi.modi:          combi
-rofi.theme: /usr/share/rofi/themes/Arc.rasi
+rofi.theme: /usr/share/rofi/themes/Adapta-Nokto.rasi

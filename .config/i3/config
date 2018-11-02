@@ -33,6 +33,7 @@ exec compton
 gaps inner 30
 bindsym $mod+F1 gaps inner current plus 5
 bindsym $mod+F2 gaps inner current minus 5
+bindsym $mod+F3 gaps inner current set 0
 bindsym $mod+Home exec i3lock-next "Type password to unlock." Roboto ; exec systemctl suspend
 # screenshot
 bindsym --release Print exec maim -s ~/Pictures/screenshots/$(date +%Y%m%d-%H%M%S)"-screenshot.png"

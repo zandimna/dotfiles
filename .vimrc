@@ -84,4 +84,6 @@ inoremap wj <Esc>
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+imap <F5> <Esc>:w<CR>:!clear;python %<CR>
+
 
