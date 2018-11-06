@@ -16,7 +16,6 @@ set $mod Mod4
 font pango:Inconsolata 14
 font pango:FontAwesome 14
 for_window [class="^.*"] border pixel 0
-assign [class="urxvt"] $ws2
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -55,6 +54,7 @@ floating_modifier $mod
 # start applications
 bindsym --release $mod+Return exec termite
 bindsym $mod+t exec chromium
+bindsym $mod+i exec anki
 bindsym $mod+n exec nautilus
 bindsym $mod+y exec ~/programming/stayawake-stable/stayawake-gtk.py >> ~/stayawake.log
 

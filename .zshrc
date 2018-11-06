@@ -131,3 +131,9 @@ export GTK2_RC_FILES=/home/zandimna/.gtkrc-2.0
 export PATH="$PATH:/home/zandimna/.gem/ruby/2.5.0/bin:/home/zandimna/.bin"
 alias scc='/home/zandimna/.scc/scc.py'
 alias rec='/home/zandimna/scripts/recordawake.sh'
+
+PATH="/home/zandimna/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/zandimna/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/zandimna/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/zandimna/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/zandimna/perl5"; export PERL_MM_OPT;
