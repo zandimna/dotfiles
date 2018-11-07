@@ -66,6 +66,7 @@ execute pathogen#helptags()
 set nocompatible
 filetype plugin on
 syntax on 
+set textwidth=78
 set tabstop=4
 set shiftwidth=4
 set expandtab
