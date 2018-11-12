@@ -18,7 +18,7 @@
 
 [colors]
 #background = ${xrdb:color0:#222}
-background = #aa000000
+background = #33000000
 background-alt = #000
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -428,13 +428,13 @@ menu-2-1-exec = menu-open-0
 [module/batinfo]
 type = custom/script
 interval = 60
-exec = ~/programming/battery-combined-tlp.sh
+exec = ~/programming/scripts/battery-combined-tlp.sh
 label = %output:1%%
 format-underline = #ffb52a
 
 [module/mjd]
 type = custom/script
-exec = ~/programming/mjd
+exec = ~/programming/scripts/mjd
 label = %output%
 format-underline = #47f948
 [settings]
