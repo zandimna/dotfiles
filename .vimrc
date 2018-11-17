@@ -82,6 +82,8 @@ nnoremap j gj
 inoremap jw <Esc>
 inoremap wj <Esc>
 imap <F5> <Esc>:w<CR>:!clear;python %<CR>
+nmap <F5> :w<CR>:!clear;python %<CR>
+nmap <F6> :NERDTreeToggle<CR>
 let g:powerline_pycmd="py3"
 
 let g:airline_powerline_fonts = 1

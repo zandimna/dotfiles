@@ -51,13 +51,13 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Inconsolata:size=18;1
-font-1 = unifont:fontformat=truetype:size=14:antialias=false;0
+font-0 = Inconsolata:size=17;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = FontAwesome:style=Regular:pixelsize=17
 
 modules-left = i3
 modules-center = xwindow
-modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu wlan eth batinfo mjd date 
+modules-right = filesystem backlight-acpi pulseaudio xkeyboard memory cpu wlan eth batinfo mjd date 
 
 tray-position = right
 tray-padding = 1
