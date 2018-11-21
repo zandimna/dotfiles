@@ -85,5 +85,13 @@ imap <F5> <Esc>:w<CR>:!clear;python %<CR>
 nmap <F5> :w<CR>:!clear;python %<CR>
 nmap <F6> :NERDTreeToggle<CR>
 let g:powerline_pycmd="py3"
-
 let g:airline_powerline_fonts = 1
+
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
+inoremap "      ""<Left>
+inoremap '      ''<Left>
+inoremap (      ()<Left>
+inoremap [      []<Left>

@@ -30,7 +30,7 @@ alert = #bd2c40
 [bar/mybar]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 40
+height = 45
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0
@@ -51,17 +51,18 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Inconsolata:size=17;1
+font-0 = Cantarell:size=18;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = FontAwesome:style=Regular:pixelsize=17
+font-2 = FontAwesome:style=Regular:pixelsize=19
+font-3 = Droid Sans Fallback:style=Regular:size=16
 
 modules-left = i3
 modules-center = xwindow
 modules-right = filesystem backlight-acpi pulseaudio xkeyboard memory cpu wlan eth batinfo mjd date 
 
 tray-position = right
-tray-padding = 1
-#tray-transparent = true
+tray-padding = 5
+tray-transparent = true
 tray-background = #222222
 
 ;wm-restack = bspwm
@@ -140,12 +141,13 @@ wrapping-scroll = false
 ;pin-workspaces = true
 
 ; Workspace icons
-ws-icon-0 = 1;
+ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
 ws-icon-3 = 4;
 ws-icon-4 = 5;
 ws-icon-5 = 6;
+ws-icon-6 = 7;
 
 ws-icon-default = 
 
@@ -154,24 +156,24 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %icon%
+label-focused = "  %icon%  "
 label-focused-background = ${module/bspwm.label-focused-background}
 label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${module/bspwm.label-focused-padding}
 ;label-focused-font = 3
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %icon%
+label-unfocused = "  %icon%  "
 label-unfocused-padding = ${module/bspwm.label-occupied-padding}
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %icon%
+label-visible = " %icon% "
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %icon%
+label-urgent = " %icon% "
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
