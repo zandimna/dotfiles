@@ -151,7 +151,7 @@ ws-icon-6 = 7;
 
 ws-icon-default = 
 
-label-mode-padding = 2
+label-mode-padding = 6
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
