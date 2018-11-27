@@ -33,22 +33,21 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 " Only do this part when compiled with support for autocommands.
-if has("autocmd")
-
-  " Put these in an autocmd group, so that we can delete them easily.
-  augroup vimrcEx
-  au!
-
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
-
-  augroup END
-
-else
-
-  set autoindent		" always set autoindenting on
-
-endif " has("autocmd")
+""if has("autocmd")
+""
+""  " Put these in an autocmd group, so that we can delete them easily.
+""  augroup vimrcEx
+""  au!
+""
+""  " For all text files set 'textwidth' to 78 characters.
+""
+""  augroup END
+""
+""else
+""
+""  set autoindent		" always set autoindenting on
+""
+""endif " has("autocmd")
 
 " Add optional packages.
 "
@@ -59,6 +58,9 @@ endif " has("autocmd")
 if has('syntax') && has('eval')
   packadd! matchit
 endif
+
+""au BufRead *.wiki iunmap '
+""au BufRead *.wiki iunmap "
 
 filetype off
 execute pathogen#infect()
@@ -71,10 +73,11 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set termguicolors
+set number
+set cursorline
 let g:solarized_termtrans=1
 set noshowmode
 set laststatus=2
-set background=dark
 set t_Co=256
 colorscheme solarized8
 nnoremap k gk
@@ -83,8 +86,6 @@ inoremap jw <Esc>
 inoremap wj <Esc>
 imap <F5> <Esc>:w<CR>:!clear;python %<CR>
 nmap <F5> :w<CR>:!clear;python %<CR>
-nmap <F6> :NERDTreeToggle<CR>
-let g:powerline_pycmd="py3"
 let g:airline_powerline_fonts = 1
 
 inoremap {      {}<Left>
