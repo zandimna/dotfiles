@@ -75,10 +75,10 @@ set expandtab
 set termguicolors
 set number
 set cursorline
-let g:solarized_termtrans=1
 set noshowmode
 set laststatus=2
-set t_Co=256
+set background=dark
+let g:solarized_termtrans=1
 colorscheme solarized8
 nnoremap k gk
 nnoremap j gj
@@ -87,12 +87,20 @@ inoremap wj <Esc>
 imap <F5> <Esc>:w<CR>:!clear;python %<CR>
 nmap <F5> :w<CR>:!clear;python %<CR>
 let g:airline_powerline_fonts = 1
-
+let g:airline_exclude_preview = 1
 inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
 inoremap "      ""<Left>
+inoremap ""     "
 inoremap '      ''<Left>
+inoremap ''     '
 inoremap (      ()<Left>
+inoremap ((     (
 inoremap [      []<Left>
+inoremap [[      [
+imap <Tab>      <C-Space>
+inoremap <C-e> <C-o>A
+inoremap <S-Tab> <C-o>f)<C-o>a
+
