@@ -45,7 +45,7 @@ modules-right = filesystem backlight-acpi pulseaudio xkeyboard memory cpu wlan e
 
 tray-position = right
 tray-padding = 5
-tray-transparent = 
+tray-transparent = true
 tray-background = #222222
 
 ;wm-restack = bspwm
@@ -126,39 +126,39 @@ wrapping-scroll = false
 ;pin-workspaces = true
 ;
 ; Workspace icons
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-;ws-icon-6 = 7;
-
-ws-icon-default = 
-
+;ws-icon-0 = 1;
+;ws-icon-1 = 2;
+;ws-icon-2 = 3;
+;ws-icon-3 = 4;
+;ws-icon-4 = 5;
+;ws-icon-5 = 6;
+;;ws-icon-6 = 7;
+;
+;ws-icon-default = 
+;
 label-mode-padding = 6
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = "  %icon%  "
+label-focused = "  %index%  "
 label-focused-background = ${module/bspwm.label-focused-background}
 label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${module/bspwm.label-focused-padding}
 ;label-focused-font = 3
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = "  %icon%  "
+label-unfocused = "  %index%  "
 label-unfocused-padding = ${module/bspwm.label-occupied-padding}
 
 ; visible = Active workspace on unfocused monitor
-label-visible = " %icon% "
+label-visible = " %index% "
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = " %icon% "
+label-urgent = " %index% "
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 

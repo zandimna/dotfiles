@@ -122,13 +122,13 @@ alias i3conf="vim ~/.config/i3/config"
 alias barconf="vim ~/.config/polybar/config"
 alias mv="mv -iv"
 alias cp="cp -iv"
-alias stayawake="python ~/programming/stayawake-stable/stayawake-gtk.py"
-alias sa="cd ~/programming/stayawake"
+alias stayawake="python ~/code/sastable/stayawake-gtk.py"
+alias sa="cd ~/code/stayawake"
 
 export TERMINAL=termite
 export EDITOR=vim
 export GTK2_RC_FILES=/home/zandimna/.gtkrc-2.0
-export PATH="$PATH:/home/zandimna/programming/scripts:/home/zandimna/.local/bin:/home/zandimna/go/bin:/home/zandimna/.gem/ruby/2.5.0/bin:/home/zandimna/.bin"
+export PATH="$PATH:/home/zandimna/code/scripts:/home/zandimna/.local/bin:/home/zandimna/go/bin:/home/zandimna/.gem/ruby/2.5.0/bin:/home/zandimna/.bin"
 alias scc='/home/zandimna/.scc/scc.py'
 alias rec='/home/zandimna/scripts/recordawake.sh'
 
@@ -140,3 +140,5 @@ PERL_MM_OPT="INSTALL_BASE=/home/zandimna/perl5"; export PERL_MM_OPT;
 export CM_LAUNCHER=rofi
 
 eval $(thefuck --alias)
+alias t=todo.sh
+alias aw="source ~/build/activitywatch/venv/bin/activate && aw-qt"

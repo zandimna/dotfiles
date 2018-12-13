@@ -34,7 +34,8 @@ gaps inner 0
 bindsym $mod+F1 gaps inner current plus 5
 bindsym $mod+F2 gaps inner current minus 5
 bindsym $mod+F3 gaps inner current set 0
-bindsym $mod+Home exec light-locker-command -l
+bindsym $mod+Home exec systemctl suspend
+
 # screenshot
 bindsym --release Print exec maim -s ~/Pictures/screenshots/$(date +%Y%m%d-%H%M%S)"-screenshot.png"
 bindsym --release $mod+Print exec maim ~/Pictures/screenshots/$(date +%Y%m%d-%H%M%S)"-screenshot.png"
@@ -60,7 +61,7 @@ bindsym mod1+Shift+v exec CM_LAUNCHER=rofi clipmenu
 bindsym $mod+t exec firefox
 bindsym $mod+i exec anki
 bindsym $mod+n exec nautilus
-bindsym $mod+y exec DISPLAY=:0 ~/programming/sastable/stayawake-gtk.py >> ~/stayawake.log
+bindsym $mod+f9 exec DISPLAY=:0 ~/code/sastable/stayawake-gtk.py >> ~/stayawake.log
 bindsym $mod+p exec env ~/programming/scripts/tview.sh
 
 

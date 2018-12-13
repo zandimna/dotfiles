@@ -104,3 +104,4 @@ imap <Tab>      <C-Space>
 inoremap <C-e> <C-o>A
 inoremap <S-Tab> <C-o>f)<C-o>a
 
+map <C-n> :NERDTreeToggle<CR>
