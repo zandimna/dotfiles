@@ -423,14 +423,14 @@ menu-2-1-exec = menu-open-0
 [module/batinfo]
 type = custom/script
 interval = 60
-exec = ~/programming/scripts/battery-combined-tlp.sh
+exec = ~/code/scripts/battery-combined-tlp.sh
 label = %output:1%%
 format-background = #cd951a
 format-padding = 4
 
 [module/mjd]
 type = custom/script
-exec = ~/programming/scripts/mjd
+exec = ~/code/scripts/mjd
 label = %output%
 format-background = #27b928
 format-padding = 4
