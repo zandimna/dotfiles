@@ -29,7 +29,7 @@ for_window [class="^.*"] border pixel 0
 exec_always --no-startup-id ~/code/scripts/polybar.sh
 exec_always compton
 
-gaps inner 0
+gaps inner 20
 bindsym $mod+F1 gaps inner current plus 5
 bindsym $mod+F2 gaps inner current minus 5
 bindsym $mod+F3 gaps inner current set 0
@@ -57,7 +57,7 @@ floating_modifier $mod
 # start applications
 bindsym $mod+Return exec termite
 bindsym mod1+Shift+v exec CM_LAUNCHER=rofi clipmenu
-bindsym $mod+t exec firefox
+bindsym $mod+f exec firefox
 bindsym $mod+i exec anki
 bindsym $mod+n exec nautilus
 bindsym $mod+y exec ~/code/stayawake/stayawake-gtk.py >> ~/stayawake.log
@@ -104,7 +104,7 @@ bindsym $mod+g split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+#bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking

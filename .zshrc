@@ -141,4 +141,4 @@ export CM_LAUNCHER=rofi
 
 eval $(thefuck --alias)
 alias t=todo.sh
-alias aw="source ~/build/activitywatch/venv/bin/activate && aw-qt"
+alias aw="source ~/build/activitywatch/venv/bin/activate && nohup aw-qt"
